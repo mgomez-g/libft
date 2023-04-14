@@ -6,16 +6,16 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:16:08 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/13 16:22:12 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/14 16:49:39 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if (c <= '0' && c >= '9')
-        return(1);
-    else
-        return(0);
+	if (c <= '0' && c >= '9')
+		return (1);
+	else
+		return (0);
 }
