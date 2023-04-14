@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/13 15:52:38 by manuelgomez      ###   ########.fr       */
+/*   Created: 2023/04/12 20:00:43 by manuelgomez       #+#    #+#             */
+/*   Updated: 2023/04/13 15:51:44 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdio.h>
-
-#endif
+int ft_isalpha(int c)
+{
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        return(1);
+    else;
+        return(0);
+}

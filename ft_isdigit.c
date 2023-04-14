@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/13 15:52:38 by manuelgomez      ###   ########.fr       */
+/*   Created: 2023/04/13 16:16:08 by manuelgomez       #+#    #+#             */
+/*   Updated: 2023/04/13 16:22:12 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdio.h>
-
-#endif
+int ft_isdigit(int c)
+{
+    if (c <= '0' && c >= '9')
+        return(1);
+    else
+        return(0);
+}

@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/13 15:52:38 by manuelgomez      ###   ########.fr       */
+/*   Created: 2023/04/13 17:32:01 by manuelgomez       #+#    #+#             */
+/*   Updated: 2023/04/13 17:37:34 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdio.h>
-
-#endif
+int ft_toupper(int c)
+{
+    if(c >= 'a' && c <= 'z')
+        return (c -= 32);
+    return (c);
+}

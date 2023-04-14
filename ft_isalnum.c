@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/13 15:52:38 by manuelgomez      ###   ########.fr       */
+/*   Created: 2023/04/13 16:30:39 by manuelgomez       #+#    #+#             */
+/*   Updated: 2023/04/13 17:09:05 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdio.h>
-
-#endif
+int ft_isalnum(int c)
+{
+ if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || \
+ (c >= '0' && c <= '9'))
+    return (1);
+ else
+    return (0);
+}
