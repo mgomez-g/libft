@@ -6,7 +6,7 @@
 #    By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 15:49:49 by manuelgomez       #+#    #+#              #
-#    Updated: 2023/04/14 17:36:12 by manuelgomez      ###   ########.fr        #
+#    Updated: 2023/04/15 15:04:06 by manuelgomez      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,10 @@ SRC = ft_strlen.c \
 	  ft_toupper.c \
 	  ft_isascii.c \
 	  ft_isprint.c \
+	  ft_strchr.c \
+	  ft_strrchr.c \
+	  ft_strcmp.c \
+	  
 	  
 	  
 	  
