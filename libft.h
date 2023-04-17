@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/17 14:09:39 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/17 18:18:58 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,6 @@ int ft_strcmp(const char *s1, const char *s2, size_t n) \
 void ft_bzero(void *s, size_t n) \
 int ft_atoi(const char *str) \
 void *ft_memcpy(void *dst, const void *src, size_t n) \
+void *ft_memmove(void *dst, const void *src, size_t n) \
+void *ft_memchr(const void *str, int c, size_t n) \
 #endif
