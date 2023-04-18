@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/15 12:38:01 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/18 19:27:50 by manuelgomez      ###   ########.fr       */
+/*   Created: 2023/04/18 14:02:01 by manuelgomez       #+#    #+#             */
+/*   Updated: 2023/04/18 17:49:55 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	int	i;
+	unsigned char	*s1;
+	unsigned char	*s2;
 
-	i = ft_strlen(str);
-	while (i >= 0)
+	s1 = (unsigned char *)str1;
+	s2 = (unsigned char *)str2;
+	if (n == 0)
+		return (0);
+	while ((*s1 == *s2) && ((n - 1) > 0))
 	{
-		if (str[i] == (char)c)
-			return ((char *)str + i);
-		i--;
+		s1++;
+		s2++;
+		n--;
 	}
-	return (0);
+	return (*s1 - *s2);
 }
+
+/*compara dos bloques de memoria y determina si son iguales o no
+dando un valor entero que indica la relacion entre los bloques*/

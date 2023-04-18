@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:16:08 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/14 16:49:39 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/18 18:03:02 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	if (c <= '0' && c >= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);

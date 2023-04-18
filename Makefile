@@ -6,7 +6,7 @@
 #    By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 15:49:49 by manuelgomez       #+#    #+#              #
-#    Updated: 2023/04/17 18:19:32 by manuelgomez      ###   ########.fr        #
+#    Updated: 2023/04/18 17:59:11 by manuelgomez      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,14 @@ SRC = ft_strlen.c \
 	  ft_isprint.c \
 	  ft_strchr.c \
 	  ft_strrchr.c \
-	  ft_strcmp.c \
+	  ft_strncmp.c \
 	  ft_bzero.c \
 	  ft_atoi.c \
 	  ft_memcpy.c \
 	  ft_memmove.c \
 	  ft_memchr.c \
+	  ft_memset.c \
+	  ft_memcmp.c
 	  
 	  
 	  
