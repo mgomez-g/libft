@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/20 10:54:02 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/20 13:37:44 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,6 @@ size_t	strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *needle, const char *haystack, size_t len);
 void	*ft_calloc(size_t nitems, size_t sizeitems);
 char	*ft_strdup(const char *s1);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *str1, char const *str2);
 #endif
