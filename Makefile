@@ -6,7 +6,7 @@
 #    By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 15:49:49 by manuelgomez       #+#    #+#              #
-#    Updated: 2023/04/20 13:37:27 by manuelgomez      ###   ########.fr        #
+#    Updated: 2023/04/20 15:41:07 by manuelgomez      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ SRC = ft_strlen.c \
 	  ft_calloc.c \
 	  ft_strdup.c \
 	  ft_substr.c \
-	  ft_strjoin \
+	  ft_strjoin.c \
 	  
 	  
 	  
