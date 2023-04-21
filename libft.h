@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/20 13:37:44 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/21 13:11:24 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,10 @@ void	*ft_calloc(size_t nitems, size_t sizeitems);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *str1, char const *str2);
+int		ft_chech_if_trimable(char const *str, char c);
+void	ft_put_in_arr(char *arr, const char *str, int start, int end);
+char	*ft_strtrim(char const *str, char const *set);
+int		count_words(const char *str, char c);
+char	*malloc_word(const char *s, char c);
+char	**ft_split(char const *s, char c);
 #endif
