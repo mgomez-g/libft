@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/21 13:11:24 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/22 14:29:59 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,12 @@ char	*ft_strtrim(char const *str, char const *set);
 int		count_words(const char *str, char c);
 char	*malloc_word(const char *s, char c);
 char	**ft_split(char const *s, char c);
+char	*ft_strrev(char *str);
+int		ft_intlen(int n);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 #endif

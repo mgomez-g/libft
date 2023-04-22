@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 09:33:56 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/22 09:56:08 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/22 13:51:53 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strrev(char *str)
 	char	swap;
 
 	i = 0;
-	size = ft_strlen(str) -1;
-	while (size > 1)
+	size = ft_strlen(str) - 1;
+	while (size > i)
 	{
 		swap = str[i];
 		str[i] = str[size];
@@ -31,12 +31,12 @@ char	*ft_strrev(char *str)
 	return (str);
 }
 
-int ft_intlen (int n)
+int	ft_intlen(int n)
 {
 	int	len;
 
 	len = 0;
-	if (n <= 0);
+	if (n <= 0)
 		len++;
 	while (n)
 	{
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (0);
 	if (n == 0)
-		str[i] = '0';
+		str[i++] = '0';
 	while (n != 0)
 	{
 		str[i] = (n % 10) * sign + '0';
@@ -68,11 +68,21 @@ char	*ft_itoa(int n)
 		n = n / 10;
 	}
 	if (sign == -1)
-		str[i] = '-';
+		str[i++] = '-';
+	str[i] = '\0';
 	return (ft_strrev(str));
 }
 
-/*convierte un número entero en una cadena de caracteres. La función toma tres
+/*La finción ft_strrev invierte el string de caracteres dado.
+
+La función ft_intlen calcula el número de dígitos en un número entero.
+Recibe como argumento un número entero y devuelve el número de dígitos
+que tiene el número, incluyendo el signo negativo si es un número negativo.
+
+Función ft_itoa: Esta es la función principal que convierte un número entero
+en una cadena de caracteres
+
+convierte un número entero en una cadena de caracteres. La función toma tres
 argumentos: el primer argumento es el número entero a convertir, el segundo
 argumento es un puntero a un array de caracteres donde se almacenará la cadena
 resultante y el tercer argumento es la base en la que se desea representar el
