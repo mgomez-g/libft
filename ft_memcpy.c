@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:42:35 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/18 19:19:06 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/24 09:00:26 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*esta funcion copia un bloque de memoria de un lugar a otro*/

@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:19:18 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/18 18:01:34 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/24 09:22:01 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		ft_memcpy(dst, src, n);
 	return (dst);
 }
+
+/*El código implementa la función ft_memmove, que copia n bytes desde la 
+dirección de origen src a la dirección de destino dst, tratando correctamente 
+los casos en que las regiones de origen y destino se superponen.*/

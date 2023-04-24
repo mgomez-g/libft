@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 15:11:55 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/15 15:32:35 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/24 09:33:46 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,6 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
+
+/*La función memset establecerá cada byte en el bloque de memoria str con el 
+valor c, hasta un máximo de size_t bytes.*/

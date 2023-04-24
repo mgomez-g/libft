@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:51:31 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/17 18:19:06 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/24 08:29:11 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,6 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (0);
 }
+
+/*busca la primera aparición de un carácter en una cadena de memoria y devuelve 
+un puntero al byte correspondiente en caso de encontrarlo.*/

@@ -6,7 +6,7 @@
 #    By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 15:49:49 by manuelgomez       #+#    #+#              #
-#    Updated: 2023/04/22 14:30:21 by manuelgomez      ###   ########.fr        #
+#    Updated: 2023/04/24 07:54:03 by manuelgomez      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,8 @@ SRC = ft_strlen.c \
 	  ft_striteri.c \
 	  ft_putchar_fd.c \
 	  ft_putstr_fd.c \
-	  ft_putendl_fd.c 
+	  ft_putendl_fd.c \
+	  ft_putnbr_fd.c
 	  
 	  
 	  
