@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/24 08:04:07 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/26 11:03:30 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int		ft_isdigit(int c);
 int		ft_tolower(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-char	*ft_strchr(const char *str, int c);
-char	*ft_strrchr(const char *str, int c);
+char	*ft_strchr(const char *str, int character);
+char	*ft_strrchr(const char *str, int character);
 int		ft_strcmp(const char *s1, const char *s2, size_t n);
 void	ft_bzero(void *s, size_t n);
 int		ft_atoi(const char *str);

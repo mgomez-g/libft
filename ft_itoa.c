@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 09:33:56 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/24 08:21:31 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/26 11:55:53 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char	*ft_itoa(int n)
 	return (ft_strrev(str));
 }
 
-/*La finción ft_strrev invierte el string de caracteres dado ya que la funcion
+/*La función ft_strrev invierte el string de caracteres dado ya que la funcion
 itoa les hace print de derecha a izquierda.
 
 La función ft_intlen calcula el número de dígitos en un número entero.
