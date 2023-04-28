@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 10:30:04 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/20 10:39:32 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/28 12:06:42 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ char	*ft_strdup(const char *s1)
 		ft_memcpy(dup, s1, len);
 	return (dup);
 }
-
-/*Esta función recibe como parámetro un puntero a una cadena de caracteres
- (s1), y devuelve un puntero a una copia de esa cadena en memoria dinámica.
-Primero se obtiene la longitud de la cadena s1 usando la función ft_strlen,
-y se le suma 1 para incluir el carácter nulo final. Luego, se reserva
-memoria dinámica con malloc para la copia de la cadena. Si la asignación
-de memoria fue exitosa, se copia el contenido de la cadena original en
-la copia usando la función ft_memcpy, y se devuelve un puntero a la copia.
-En caso contrario, se devuelve un puntero nulo.*/

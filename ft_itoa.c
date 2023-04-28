@@ -6,13 +6,13 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 09:33:56 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/26 11:55:53 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/28 17:37:52 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev(char *str)
+static char	*ft_strrev(char *str)
 {
 	int		i;
 	int		size;
@@ -31,7 +31,7 @@ char	*ft_strrev(char *str)
 	return (str);
 }
 
-int	ft_intlen(int n)
+static int	ft_intlen(int n)
 {
 	int	len;
 

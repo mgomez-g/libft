@@ -6,13 +6,13 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 13:10:20 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/21 13:13:20 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/28 17:38:41 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(const char *str, char c)
+static int	count_words(const char *str, char c)
 {
 	size_t	word;
 
@@ -31,7 +31,7 @@ int	count_words(const char *str, char c)
 	return (word);
 }
 
-char	*malloc_word(const char *s, char c)
+static char	*malloc_word(const char *s, char c)
 {
 	char	*word;
 	size_t	i;

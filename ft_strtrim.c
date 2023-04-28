@@ -6,13 +6,13 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 10:25:32 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/21 12:00:44 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/28 17:55:32 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_chech_if_trimable(char const *str, char c)
+static int	ft_chech_if_trimable(char const *str, char c)
 {
 	while (*str)
 	{
@@ -23,7 +23,7 @@ int	ft_chech_if_trimable(char const *str, char c)
 	return (0);
 }
 
-void	ft_put_in_arr(char *arr, const char *str, int start, int end)
+static void	ft_put_in_arr(char *arr, const char *str, int start, int end)
 {
 	int	i;
 

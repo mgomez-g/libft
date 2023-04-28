@@ -6,13 +6,13 @@
 #    By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 15:49:49 by manuelgomez       #+#    #+#              #
-#    Updated: 2023/04/24 07:54:03 by manuelgomez      ###   ########.fr        #
+#    Updated: 2023/04/28 16:47:58 by manuelgomez      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -I .
 
@@ -53,21 +53,9 @@ SRC = ft_strlen.c \
 	  ft_putendl_fd.c \
 	  ft_putnbr_fd.c
 	  
-	  
-	  
-	  
-	  
-	  
 OBJ =  $(SRC:.c=.o)
 
-BONUS = ft_lstnew.c
-
-BONUS_OBJ = $(BONUS:.c=.o)
-
 all: $(NAME)
-
-bonus: $(BONUS_OBJ)
-	ar rcs $(NAME) $(BONUS_OBJ)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
