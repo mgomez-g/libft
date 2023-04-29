@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 12:38:01 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/26 10:29:20 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/29 10:25:59 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 char	*ft_strrchr(const char *str, int character)
 {
-	int	i;
+	int		i;
 
 	i = ft_strlen(str);
+	if (character == 0)
+		return ((char *)str + i);
 	while (i >= 0)
 	{
-		if (str[i] == (char)character)
+		if (str[i] == character)
 			return ((char *)str + i);
 		i--;
 	}
-	return (0);
+	return (NULL);
 }
 
 /*La función strrchr() en C se utiliza para buscar la última aparición de un 

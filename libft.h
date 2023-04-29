@@ -6,7 +6,7 @@
 /*   By: manuelgomezgomez <manuelgomezgomez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:50:40 by manuelgomez       #+#    #+#             */
-/*   Updated: 2023/04/28 11:40:17 by manuelgomez      ###   ########.fr       */
+/*   Updated: 2023/04/29 10:40:16 by manuelgomez      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,20 +36,14 @@ void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 void	*ft_memset(void *str, int c, size_t n);
-size_t	strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *needle, const char *haystack, size_t len);
 void	*ft_calloc(size_t nitems, size_t sizeitems);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *str1, char const *str2);
-int		ft_chech_if_trimable(char const *str, char c);
-void	ft_put_in_arr(char *arr, const char *str, int start, int end);
 char	*ft_strtrim(char const *str, char const *set);
-int		count_words(const char *str, char c);
-char	*malloc_word(const char *s, char c);
 char	**ft_split(char const *s, char c);
-char	*ft_strrev(char *str);
-int		ft_intlen(int n);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -57,4 +51,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 #endif
