@@ -17,15 +17,13 @@ char	*ft_strrchr(const char *str, int character)
 	int		i;
 
 	i = ft_strlen(str);
-	if (character == 0)
-		return ((char *)str + i);
 	while (i >= 0)
 	{
-		if (str[i] == character)
+		if (str[i] == (char)character)
 			return ((char *)str + i);
 		i--;
 	}
-	return (NULL);
+	return (0);
 }
 
 /*La función strrchr() en C se utiliza para buscar la última aparición de un 
