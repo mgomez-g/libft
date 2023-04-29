@@ -12,18 +12,14 @@
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int character)
 {
 	int		i;
 
 	i = ft_strlen(str);
 	while (i >= 0)
 	{
-<<<<<<< HEAD
 		if (str[i] == (char)character)
-=======
-		if (str[i] == c)
->>>>>>> 00dffac1cf00244bb3f64699e5bdc034acb8f228
 			return ((char *)str + i);
 		i--;
 	}
